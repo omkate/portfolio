@@ -1,0 +1,47 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 top-height-left">
+        <h1><b>ABOUT US</b></h1>
+        <p>
+          We bring to you irresistible eye catchy #template design inspiration
+          that will make you want to have a second look. Are you a #professional
+          website designer that's looking to make a professional #wordpress
+          #website but need #inspiration from pre made template #designs? look
+          no further we got your back.
+        </p>
+        <div class="container" *ngIf="enable == 1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            soluta et repellat molestias totam, ad nesciunt natus aliquam ullam
+            expedita magnam vitae est atque aut blanditiis in vero
+            necessitatibus minus? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cupiditate soluta et repellat molestias totam, ad
+            nesciunt natus aliquam ullam expedita magnam vitae est atque aut
+            blanditiis in vero necessitatibus minus?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            soluta et repellat molestias totam, ad nesciunt natus aliquam ullam
+            expedita magnam vitae est atque aut blanditiis in vero
+            necessitatibus minus?
+          </p>
+          <button mat-flat-button color="primary" (click)="closeReadMore()">
+            Show Less
+          </button>
+        </div>
+        <button
+          mat-flat-button
+          color="primary"
+          (click)="readMore()"
+          *ngIf="enable == 0"
+        >
+          Show More
+        </button>
+      </div>
+      <div class="col-md-6 mt20">
+        <img src="../../assets/about_us_page_image.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

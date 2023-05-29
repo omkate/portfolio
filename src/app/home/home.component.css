@@ -1,0 +1,89 @@
+.top-height-left {
+  margin-top: 20%;
+}
+.top-height-right {
+  margin-top: 3%;
+}
+
+.buttons button {
+  opacity: 0;
+  display: inline-block;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.text1 {
+  opacity: 0;
+  animation: slideBottom ease 1s forwards;
+}
+.text2 {
+  opacity: 0;
+  animation: slideRight ease 1s forwards;
+}
+.text3 {
+  opacity: 0;
+  animation: slideTop ease 1s forwards;
+}
+.text4 {
+  opacity: 0;
+  animation: slideLeft ease 1s forwards;
+}
+
+img {
+  opacity: 0;
+  animation: zoomIn ease 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

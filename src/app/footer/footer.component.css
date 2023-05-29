@@ -1,0 +1,11 @@
+.footerClass {
+  margin: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgb(235, 232, 232);
+  width: 100%;
+  padding: 10px;
+}
+.container {
+  align-items: center;
+}
